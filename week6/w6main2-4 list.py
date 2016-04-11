@@ -12,3 +12,5 @@ def main():
 main()
 
 input("enter to end")
+if __name__=="__main__":
+	main()
