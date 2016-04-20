@@ -89,9 +89,11 @@ def m1():
 		score+=3
 		print "your score is now %d !" % score
 		t1.goto(0,-200)
-	if(score>10):
+	if(score>=10):
 		print "Nice Playeeeeeeeeeeeeeeeeeeeee!!!"
+		t1.goto(0,0)
 		t1.write("Good job")
+		print "Game will be ended after 10 sec"
 		time.sleep(10)
 		wn.bye()	
 	
