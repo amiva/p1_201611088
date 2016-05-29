@@ -1,0 +1,11 @@
+﻿import os
+mydir=os.getcwd()
+filename='python.txt'
+myfilename=os.path.join(mydir,filename)
+myfile=open(myfilename,'r')
+contents=myfile.readlines()
+myfile.close()
+for i in range(0,len(contents)):
+    if contents[i].find('Python')>=0:
+        print contents[i]
+input("")
